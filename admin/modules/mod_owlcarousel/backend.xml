@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backend>
+    <module>
+        <id>mod_owlcarousel</id>
+        <title>Карусель owlcarousel</title>
+    </module>
+    <params>
+        <param type="number" name="shownum" title="Количество фотографий" units="шт." default="5" />
+        <param type="list_db" name="album_id" title="Фотографии из альбома" src="cms_photo_albums" src_title="title" src_value="id" tree="1">
+            <option title="-- Все альбомы --" value="0" />
+        </param>
+        <param type="list" name="effect" title="Эффект смены">
+            <option title="Случайно" value="random" />
+            <option title="swirl" value="swirl" />
+            <option title="rain" value="rain" />
+            <option title="straight" value="straight" />
+        </param>
+        <param type="number" name="width" title="Ширина фотографии" units="px." default="565" />
+        <param type="number" name="height" title="Высота фотографии" units="px." default="290" />
+        <param type="flag" name="showtitle" title="Показывать названия фотографий" default="on" />
+        <param type="flag" name="shownav" title="Показывать навигацию" default="on" />
+    </params>
+</backend>
